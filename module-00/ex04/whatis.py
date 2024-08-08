@@ -9,5 +9,5 @@ elif len(sys.argv) != 2:
 try:
     argument = int(sys.argv[1])
     print("I'm Odd" if int(argument) % 2 else "I'm Even.")
-except:
+except Exception:
     print("AssertionError: argument is not an integer")
