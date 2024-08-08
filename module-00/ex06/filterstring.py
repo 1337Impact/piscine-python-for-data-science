@@ -1,5 +1,5 @@
 import sys
-import ft_filter
+from ft_filter import ft_filter
 
 
 def main():
@@ -20,8 +20,8 @@ words from a given string based on their length.
     S = sys.argv[1]
     N = int(sys.argv[2])
 
-    words = [w for w in ft_filter.ft_filter(lambda w: True if len(w) > N
-                                            else False, S.split())]
+    words = [w for w in ft_filter(lambda w: True if len(w) > N
+                                  else False, S.split())]
     print(words)
 
 

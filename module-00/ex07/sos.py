@@ -2,6 +2,14 @@ import sys
 
 
 def char_to_morse_code(c):
+    """translate character to its coresponding in morese code
+
+    Args:
+        c (char): character to be translated
+
+    Returns:
+        string: translated character in morse code
+    """
     morse_code_dict = {
         'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.',
         'G': '--.', 'H': '....', 'I': '..', 'J': '.---', 'K': '-.-',
@@ -17,7 +25,9 @@ def char_to_morse_code(c):
 
 
 def main():
-
+    """main function responsable for taking argument and translating it
+    to morse code.
+    """
     if (len(sys.argv) != 2):
         print("AssertionError: the arguments are bad")
         return
