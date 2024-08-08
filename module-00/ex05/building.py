@@ -1,6 +1,12 @@
 import sys
 
+
 def main():
+    """
+    Main function of the script.
+
+    This function counts various types of characters in a given input text.
+    """
     inputValue = ""
     if (len(sys.argv) > 2):
         print("AssertionError")
@@ -11,7 +17,7 @@ def main():
         inputValue = sys.argv[1]
     upperCase = 0
     lowerCase = 0
-    punctuation= 0
+    punctuation = 0
     digits = 0
     spaces = 0
     for e in inputValue:
@@ -26,11 +32,11 @@ def main():
         elif (e.isspace() or e == '\r'):
             spaces += 1
     print(f"The text contains {len(inputValue)} characters:")
-    print(upperCase ,"upper letters")
-    print(lowerCase ,"lower letters")
-    print(punctuation ,"punctuation marks")
-    print(spaces ,"spaces")
-    print(digits ,"digits")
+    print(upperCase, "upper letters")
+    print(lowerCase, "lower letters")
+    print(punctuation, "punctuation marks")
+    print(spaces, "spaces")
+    print(digits, "digits")
 
 
 if __name__ == "__main__":
